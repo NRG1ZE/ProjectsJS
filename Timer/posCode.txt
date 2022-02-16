@@ -1,0 +1,40 @@
+Possible Implementation
+1a. Event listener to watch for click on 'start' button
+2a. Emit an event stating that the timer has started.
+  2a. Watch for this event, on occur, draw border.
+2b. Start counting down the timer
+2c. Emit an event that the timer has 'ticked'
+  2c. Watch for this event, on occur, update border.
+2d. Each time the timer counts down, update the text.
+2e. If we counted down and timer reaches 0
+3a. Emit an event that the timer is done
+  3a. Watch for this event, on occur, reset border
+3b. Reset internal timer to get ready for another run
+
+2Blocks of code 
+1st - timer functions 1a,2b,2d,2e,3b
+2nd - watch events for border 2a,2c,3a
+
+1st block methods
+class Timer
+-constructor(durationInput, startButton, pauseButton)
+start()
+goal-start up tick()-call tick() at intervals-end tick()
+pause()
+-call() clearInterval pass in rel ID
+onDurationChange()
+tick()
+-pause() on 0 time
+-method to be called 'ticks' at 1 second intervals
+-setter sets time
+-getter gets time
+const timer = new Timer
+-argument for hook methods
+-onStart()
+-onTick()
+-onComplete()
+
+animatedTimer 
+SVG 
+
+
