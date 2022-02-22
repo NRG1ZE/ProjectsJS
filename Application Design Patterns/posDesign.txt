@@ -1,0 +1,24 @@
+Movie Fight
+
+Startup
+-setup BoilerPlate
+-Identify Challenging Aspects
+-Get Started and write LOTS OF CODE
+
+Challenges
+-How to fetch data about movies
+  -setTimeout to cut down number of requests
+-autocomplete widget
+-styling
+
+SolvingProblems
+-MoviesAPI omdbapi.com
+-API index/show values
+-API key "email/password"
+
+UsageData
+-OMDb API Key: 618eba94
+-Send all data requests to:
+http://www.omdbapi.com/?apikey=[yourkey]&
+-Poster API requests:
+http://img.omdbapi.com/?apikey=[yourkey]&
