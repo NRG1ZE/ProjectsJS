@@ -48,6 +48,14 @@ grid-> 2d array
 verticals = array of walls between columns
 horizontals = array of walls between rows
 arrays contains values: true(no wall) or false(is wall)
+
+neighborsCheck/
+currentPosition => R,C
+Above currentPosition => R-1,C
+RightOf currentPosition => R,C+1
+Below currentPosition => R+1,C
+Leftof currentPosition => R,C-1   
+
 -------
 Resources
 -------
