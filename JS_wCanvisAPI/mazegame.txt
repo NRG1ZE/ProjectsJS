@@ -10,7 +10,6 @@ html elements?
 keyinput responses
 how to detect win con?
 
-
 -------
 Breakdown
 -------
@@ -21,7 +20,6 @@ matter.js
 |->can detect collisions between diffrent shapes..
 |->..and report them as events
 
-
 -------
 Matter JS Terminology
 -------
@@ -31,7 +29,6 @@ Engine - reads current state of the world obj, then calculates changes in positi
 Runner - gets the engine processes an update, Render will take a look at all the diffrent shapes and show them on screen
 Render - Whenever the engine processes an update, Render will take a look at all the diffrenet shapes and show them on screen 
 Body - a shape that we are displaying. can be circle, rectangle,oval, etc
-
 
 -------
 Maze Building Algorithm
