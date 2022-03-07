@@ -32,6 +32,22 @@ Runner - gets the engine processes an update, Render will take a look at all the
 Render - Whenever the engine processes an update, Render will take a look at all the diffrenet shapes and show them on screen 
 Body - a shape that we are displaying. can be circle, rectangle,oval, etc
 
+
+-------
+Maze Building Algorithm
+-------
+Create a grid of cells
+Pick a random starting cells
+Step 1) For that cell, buld a randomly- ordered list of neighbors
+Step 2) If a neighbor has been visted before, remove it from the list
+Step 3) For each remaing neighbor, 'move' to it and remove the wall between those two cells
+Step 4) Repeat at Step-1 for this new neighbor
+
+Application/
+grid-> 2d array
+verticals = array of walls between columns
+horizontals = array of walls between rows
+arrays contains values: true(no wall) or false(is wall)
 -------
 Resources
 -------
