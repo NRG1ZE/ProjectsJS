@@ -1,0 +1,38 @@
+ENDPOINT: 301
+
+-------
+Big challenges
+-------
+how to generate a maze?
+a soulution
+how are we going to draw the maze on screen?
+html elements?
+keyinput responses
+how to detect win con?
+
+
+-------
+Breakdown
+-------
+generating a maze!
+tree data structure
+matter.js
+|->can map key press
+|->can detect collisions between diffrent shapes..
+|->..and report them as events
+
+
+-------
+Matter JS Terminology
+-------
+
+World - obj that contains all of the diffrent 'things' in our matter app
+Engine - reads current state of the world obj, then calculates changes in position of all the diffrent shapes
+Runner - gets the engine processes an update, Render will take a look at all the diffrent shapes and show them on screen
+Render - Whenever the engine processes an update, Render will take a look at all the diffrenet shapes and show them on screen 
+Body - a shape that we are displaying. can be circle, rectangle,oval, etc
+
+-------
+Resources
+-------
+brm.io/matter-js
