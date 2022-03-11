@@ -1,7 +1,7 @@
 const { Engine, Render, Runner, World, Bodies, Body, Events } = Matter;
 
-const cellsHorizontal = 20;
-const cellsVertical = 15;
+const cellsHorizontal = 25;
+const cellsVertical = 25;
 const width = window.innerWidth;
 const height = window.innerHeight;
 
@@ -20,6 +20,7 @@ const render = Render.create({
     height,
   },
 });
+// Render command to!
 Render.run(render);
 Runner.run(Runner.create(), engine);
 

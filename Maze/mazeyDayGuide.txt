@@ -1,0 +1,8 @@
+-------
+Goals
+-------
+
+contain the maze hidden until the peremters are enter for difficulty level
+then generate a maze with a button to refresh
+refresh button will load html file reseting the page to start
+
