@@ -8,9 +8,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js"></script>
   </head>
   <body>
-    <div>The End</div>
-    <div class="winner hidden">
-      <h1>You Win!</h1>
+    <form class=" is box is-fluid" id="Configure">
+      <div class="level buttons are-medium">
+        <label class="has-text-centered">Red Maze Difficulty<label/>
+          <div class="level-item has-text-centered">
+            <button class="button is-success" value="1" >Easy</button>
+            <button class="button is-warning" value="2" >Medium</button>
+            <button class="button is-danger" value="3" >Hard</button>
+          </div>
+          <div>
+            <button input="button" value="Generate">Generate</button>
+          </div>
+      </div>
+    </form>
+    <div id="Maze"></div>
     </div>
     <script src="index.js"></script>
   </body>
