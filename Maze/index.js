@@ -1,9 +1,14 @@
+// const maze = document.body.querySelector("canvas");
+// const addMaze = () => {
+//   document.getElementById("Maze").appendChild(maze);
+// };
+
 const { Engine, Render, Runner, World, Bodies, Body, Events } = Matter;
 
-const cellsHorizontal = 20;
-const cellsVertical = 15;
-const width = window.innerWidth;
-const height = window.innerHeight;
+const cellsHorizontal = 25;
+const cellsVertical = 25;
+const width = window.innerWidth * 0.75;
+const height = window.innerHeight * 0.75;
 
 const unitLengthX = width / cellsHorizontal;
 const unitLengthY = height / cellsVertical;
@@ -20,6 +25,7 @@ const render = Render.create({
     height,
   },
 });
+// Render command to!
 Render.run(render);
 Runner.run(Runner.create(), engine);
 
@@ -221,3 +227,9 @@ Events.on(engine, "collisionStart", (event) => {
     }
   });
 });
+
+const hideMaze = () => {
+  const maze = document.body.querySelector("canvas");
+  console.log(maze.parentElement);
+  // maze.classList.add("is-hidden");
+};
